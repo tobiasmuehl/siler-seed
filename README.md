@@ -1,27 +1,22 @@
 # Siler Seed
 
-Seed project for [Siler](https://siler.leocavalcante.dev/) + [Swoole](https://www.swoole.co.uk/) hacking!
+Seed project for [Siler](https://siler.leocavalcante.dev/) + [Swoole](https://www.swoole.co.uk/) hacking!<br>
 Feel free to edit whatever files it comes bundled, it is your project now.
 
 ## What is inside
 
-- Siler
-- Swoole
-- Docker
-- .env
-- Monolog
-- PHPUnit
-- phpcs
-
-## Don't forget
-
-- `cp .env.dist .env` (then edit it)
-- `composer install`
+- [Siler](https://siler.leocavalcante.dev/)
+- [Swoole](https://www.swoole.co.uk/)
+- [Docker](https://www.docker.com/) [(Dwoole)](https://github.com/leocavalcante/dwoole)
+- [dotenv](https://github.com/vlucas/phpdotenv)
+- [Monolog](https://github.com/Seldaek/monolog)
+- [PHPUnit](https://phpunit.de/)
+- [phpcs](https://github.com/squizlabs/PHP_CodeSniffer)
 
 ## Up and running
 
-A single `docker-compose up` will start everything.
-Go to http://localhost:9501/ (or the port you defined on `DOCKER_API_PORT`).
+A single `docker-compose up` will start everything.<br>
+Go to http://localhost:9501/ (or the port you defined for `DOCKER_API_PORT` on `.env`).<br>
 **Dwoole Hot-Restart will got you covered.**
 
 ## Recommendations
