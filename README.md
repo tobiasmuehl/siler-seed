@@ -26,7 +26,7 @@ Go to http://localhost:9501/ (or the port you defined for `DOCKER_API_PORT` on `
 ## Recommendations
 
 - Update names on `composer.json` and `docker-compose.yml`.
-- Business rules goes under `src/` and HTTP endpoints goes under `http/`.
+- Business rules goes under `src/` and HTTP endpoints goes under `api/`.
 
 ## Scripts
 
