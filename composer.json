@@ -1,6 +1,6 @@
 {
-    "name": "vendor/name",
-    "description": "Description",
+    "name": "siler/seed",
+    "description": "Your project description",
     "type": "project",
     "require": {
         "leocavalcante/siler": "^1.5",
