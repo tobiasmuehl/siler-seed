@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="App Coding Standard" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+  <description>App Code Style</description>
+  <rule ref="PSR12">
+    <exclude name="Generic.Files.LineLength" />
+  </rule>
+  <file>api</file>
+  <file>src</file>
+  <file>tests</file>
+</ruleset>
