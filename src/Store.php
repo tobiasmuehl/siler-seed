@@ -4,7 +4,7 @@ namespace App;
 
 use Exception;
 
-final class State
+final class Store
 {
     private $helloWorld;
 
@@ -25,7 +25,7 @@ final class State
     public static function getState(): self
     {
         if (is_null(static::$state)) {
-            throw new Exception('State not initialized');
+            throw new Exception('Store not initialized');
         }
 
         return static::$state;

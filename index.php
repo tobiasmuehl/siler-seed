@@ -10,7 +10,7 @@ use Siler\Swoole;
 use Swoole\Runtime;
 use function Siler\Result\{failure};
 
-State::initialState(new HelloWorld());
+Store::initialState(new HelloWorld());
 
 Runtime::enableCoroutine();
 
