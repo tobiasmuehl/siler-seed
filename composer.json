@@ -3,6 +3,8 @@
     "description": "Your project description",
     "type": "project",
     "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
         "leocavalcante/siler": "^1.5",
         "vlucas/phpdotenv": "^3.3",
         "monolog/monolog": "^1.24"
