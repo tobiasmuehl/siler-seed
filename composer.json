@@ -36,6 +36,7 @@
         }
     },
     "scripts": {
+        "fix": "phpcbf",
         "lint": "phpcs",
         "test": "phpunit",
         "post-root-package-install": [
