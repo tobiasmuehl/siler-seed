@@ -4,12 +4,15 @@ namespace App;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Siler\Swoole;
-use Siler\Route;
 use Siler\Monolog as Log;
+use Siler\Route;
+use Siler\Swoole;
+use Swoole\Runtime;
 use function Siler\Result\{failure};
 
-\Swoole\Runtime::enableCoroutine();
+State::initialState(new HelloWorld());
+
+Runtime::enableCoroutine();
 
 Log\handler(Log\stream(__DIR__ . '/app.log'));
 

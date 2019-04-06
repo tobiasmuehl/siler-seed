@@ -28,7 +28,7 @@
             "App\\": "src/"
         },
         "files": [
-            "src/app.php"
+            "src/hello_world.php"
         ]
     },
     "autoload-dev": {

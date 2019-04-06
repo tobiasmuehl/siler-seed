@@ -4,5 +4,5 @@ namespace App;
 
 function hello_world_message(): string
 {
-    return State::getInstance()->getMessage();
+    return State::getState()->getHelloWorld()->getMessage();
 }

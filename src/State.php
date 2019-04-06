@@ -2,21 +2,36 @@
 
 namespace App;
 
+use Exception;
+
 final class State
 {
-    public function getMessage(): string
+    private $helloWorld;
+
+    public function getHelloWorld(): HelloWorld
     {
-        return 'Hello World';
+        return $this->helloWorld;
     }
 
-    private static $instance;
+    private static $state;
 
-    public static function getInstance(): State
+    public static function initialState(HelloWorld $helloWorld): self
     {
-        if (is_null(static::$instance)) {
-            static::$instance = new State();
+        static::$state = new self();
+        static::$state->helloWorld = $helloWorld;
+        return static::$state;
+    }
+
+    public static function getState(): self
+    {
+        if (is_null(static::$state)) {
+            throw new Exception('State not initialized');
         }
 
-        return static::$instance;
+        return static::$state;
+    }
+
+    private function __construct()
+    {
     }
 }

@@ -1,6 +1,6 @@
-/.idea
-/.env
-/*.cache
+*.cache
 /*.log
+/.env
+/.idea
 /composer.phar
 /vendor/
