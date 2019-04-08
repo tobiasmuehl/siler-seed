@@ -1,10 +1,10 @@
 version: "3"
 services:
-  api:
+  web:
     image: leocavalcante/dwoole:1.0-development
     volumes:
       - ./:/app/
     ports:
       - "${DOCKER_API_PORT}:9501"
     environment:
-      ENTRY_POINT_FILE: app/http/server.php
+      ENTRY_POINT_FILE: /app/http/server.php

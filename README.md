@@ -28,8 +28,7 @@ Go to http://localhost:9501/ (or the port you defined for `DOCKER_API_PORT` on `
 ## Recommendations
 
 - Update names at `composer.json` and change this README.
-- `src/`: Keep your entities, models, value objects, business rules, use cases etc.
-- `app/`: For I/O operations like HTTP and CLI.
+- Keep your entities, models, value objects, business rules, use cases etc at `src/` and use `http/` and `bin/` for web and cli related I/O.
 
 ## Scripts
 

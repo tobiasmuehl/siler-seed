@@ -27,7 +27,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "App\\Command\\": "app/cli/"
+            "App\\Command\\": "bin/"
         },
         "files": [
             "src/hello_world.php"
