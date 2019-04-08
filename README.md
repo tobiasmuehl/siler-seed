@@ -11,11 +11,13 @@ Feel free to edit whatever files it comes bundled, it is your project now.
 
 - [Siler](https://siler.leocavalcante.dev/)
 - [Swoole](https://www.swoole.co.uk/)
+- [Symfony console](https://symfony.com/doc/current/components/console.html)
 - [Docker](https://www.docker.com/) [(Dwoole)](https://github.com/leocavalcante/dwoole)
 - [dotenv](https://github.com/vlucas/phpdotenv)
 - [Monolog](https://github.com/Seldaek/monolog)
 - [PHPUnit](https://phpunit.de/)
 - [phpcs](https://github.com/squizlabs/PHP_CodeSniffer)
+- [PHP Mess Detector](https://phpmd.org/)
 
 ## Up and running
 
