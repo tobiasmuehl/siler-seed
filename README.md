@@ -30,5 +30,6 @@ Go to http://localhost:9501/ (or the port you defined for `DOCKER_API_PORT` on `
 
 ## Scripts
 
+- `composer fix`
 - `composer lint`
 - `composer test`

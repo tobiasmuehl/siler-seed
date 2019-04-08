@@ -2,7 +2,8 @@
 
 namespace App;
 
-require_once __DIR__ . '/vendor/autoload.php';
+$base_path = realpath(__DIR__ . '/../..');
+require_once $base_path . '/vendor/autoload.php';
 
 use Siler\Monolog as Log;
 use Siler\Route;
@@ -11,14 +12,13 @@ use Swoole\Runtime;
 use function Siler\Result\{failure};
 
 Store::initialState(new HelloWorld());
-
 Runtime::enableCoroutine();
 
-Log\handler(Log\stream(__DIR__ . '/app.log'));
+Log\handler(Log\stream($base_path . '/log/http.log'));
 
-$handler = function ($request) {
+$handler = function ($request) use ($base_path) {
     Log\debug('Request', [$request]);
-    $result = Route\files(__DIR__ . '/api') ?? failure('Not found', 404);
+    $result = Route\files($base_path . '/app/http/endpoints') ?? failure('Not found', 404);
 
     Swoole\json($result, $result->code());
 };

@@ -4,7 +4,7 @@
   <rule ref="PSR12">
     <exclude name="Generic.Files.LineLength" />
   </rule>
-  <file>api</file>
+  <file>app</file>
   <file>src</file>
   <file>tests</file>
 </ruleset>
