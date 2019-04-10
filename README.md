@@ -22,7 +22,7 @@ Feel free to edit whatever files it comes bundled, it is your project now.
 ## Up and running
 
 A single `docker-compose up` will start everything.<br>
-Go to http://localhost:9501/ (or the port you defined for `DOCKER_API_PORT` on `.env`).<br>
+Go to http://localhost:9501/ (or the port you defined for `DOCKER_HTTP_PORT` on `.env`).<br>
 **Dwoole Hot-Restart will got you covered.**
 
 ## Recommendations
@@ -35,3 +35,4 @@ Go to http://localhost:9501/ (or the port you defined for `DOCKER_API_PORT` on `
 - `composer fix`
 - `composer lint`
 - `composer test`
+- `composer all`
