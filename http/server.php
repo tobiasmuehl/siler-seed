@@ -11,7 +11,6 @@ use Siler\Swoole;
 use Swoole\Runtime;
 use function Siler\Result\{failure};
 
-Store::initialState(new HelloWorld());
 Runtime::enableCoroutine();
 
 Log\handler(Log\stream($base_path . '/log/http.log'));

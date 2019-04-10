@@ -5,14 +5,14 @@ namespace App\Command;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use function App\hello_world_message;
+use function App\ping;
 
-class HelloWorldCommand extends Command
+class Ping extends Command
 {
-    protected static $defaultName = 'helloworld:message';
+    protected static $defaultName = 'ping';
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln(hello_world_message());
+        $output->writeln(ping());
     }
 }

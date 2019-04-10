@@ -6,5 +6,5 @@ use Siler\Result\Result;
 use function Siler\Result\{success};
 
 return function (): Result {
-    return success(hello_world_message(), 200);
+    return success(ping(), 200);
 };

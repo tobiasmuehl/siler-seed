@@ -6,11 +6,9 @@ namespace App;
 $base_path = realpath(__DIR__ . '/..');
 require_once $base_path . '/vendor/autoload.php';
 
-use App\Command\HelloWorldCommand;
+use App\Command\Ping;
 use Symfony\Component\Console\Application;
 
-Store::initialState(new HelloWorld());
-
 $console = new Application();
-$console->add(new HelloWorldCommand());
+$console->add(new Ping());
 $console->run();
