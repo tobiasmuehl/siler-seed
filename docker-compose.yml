@@ -5,6 +5,6 @@ services:
     volumes:
       - ./:/app/
     ports:
-      - "${DOCKER_HTTP_PORT}:9501"
+      - "${DOCKER_HTTP_PORT:-9501}:9501"
     environment:
       ENTRY_POINT_FILE: /app/http/server.php
